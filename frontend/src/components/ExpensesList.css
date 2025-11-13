@@ -1,0 +1,147 @@
+.expenses-list {
+  margin-top: 30px;
+}
+
+.expenses-list h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.expenses-container {
+  display: grid;
+  gap: 16px;
+}
+
+.expense-card {
+  background: white;
+  border: 1px solid #e1e5e9;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.expense-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.expense-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.expense-category {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.category-icon {
+  font-size: 1.2rem;
+}
+
+.category-name {
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #495057;
+}
+
+.expense-amount {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #e03131;
+}
+
+.expense-description {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.expense-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.expense-paid-by {
+  font-style: italic;
+}
+
+.expense-splits {
+  margin-bottom: 12px;
+}
+
+.expense-splits small {
+  color: #868e96;
+  text-transform: capitalize;
+}
+
+.expense-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-delete {
+  background: #ffe3e3;
+  color: #c92a2a;
+  border: 1px solid #ffa8a8;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.btn-delete:hover {
+  background: #ffc9c9;
+  border-color: #ff6b6b;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+.no-expenses {
+  text-align: center;
+  padding: 40px;
+  color: #6c757d;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px dashed #dee2e6;
+}
+
+.no-expenses p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .expense-header {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  
+  .expense-details {
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+  }
+  
+  .expense-card {
+    padding: 16px;
+  }
+}
